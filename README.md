@@ -31,3 +31,5 @@ After v0.0.6, the program will automatically update the latest version from GitH
 `goreleaser release --skip-publish --skip-validate --rm-dist`
 
 
+### docker
+docker run --name session-guard-node --restart unless-stopped -p 18080:18080 -d chenjia404/guardnode
