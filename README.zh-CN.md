@@ -13,7 +13,7 @@ session 守卫节点，请求先到这里，然后再反向代理
 
 ### 使用说明
 
-识别 header 里面 o-host 字段作为原始host字段。
+识别 header 里面 `o-host` 字段作为原始host字段。
 
 
 ### 更新

@@ -14,7 +14,7 @@ The session guard node, the request goes here first, and then the reverse proxy
 
 ### Instructions for use
 
-Identify the o-host field in the header as the original host field.
+Identify the `o-host` field in the header as the original host field.
 
 ### build
 
