@@ -29,7 +29,7 @@ After v0.0.6, the program will automatically update the latest version from GitH
 
 ### releases
 
-`goreleaser release --skip-publish --skip-validate --rm-dist`
+`goreleaser release --skip-publish --skip-validate --clean`
 
 
 ### docker

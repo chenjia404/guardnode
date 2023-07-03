@@ -25,4 +25,8 @@ session 守卫节点，请求先到这里，然后再反向代理
 
 ### 打包
 
-`goreleaser release --skip-publish --skip-validate --rm-dist`
+`goreleaser release --skip-publish --skip-validate --clean`
+
+
+### docker
+docker run --name session-guard-node --restart unless-stopped -p 18080:18080   chenjia404/guardnode
