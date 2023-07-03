@@ -39,6 +39,8 @@ archives:
     id: guardnode
     format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    files:
+      - LICENSE.txt
     format_overrides:
       - goos: windows
         format: zip
@@ -61,3 +63,14 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+
+dockers:
+  -
+    id: guardnode
+    goos: linux
+    goarch: amd64
+    dockerfile: "goreleaser.dockefile"
+    extra_files:
+      - LICENSE.txt
+    image_templates:
+      - "chenjia404/{{.ProjectName}}:latest"

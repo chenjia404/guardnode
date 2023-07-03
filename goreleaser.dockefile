@@ -1,0 +1,12 @@
+FROM alpine:3
+
+ARG VERSION
+ENV VERSION=$VERSION
+
+WORKDIR /app/
+RUN apk update --no-cache && apk upgrade && apk add --no-cache ca-certificates
+
+COPY guardnode /app/guardnode
+
+EXPOSE 18080
+ENTRYPOINT   ["/app/guardnode"]
