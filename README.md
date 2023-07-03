@@ -6,10 +6,11 @@ The session guard node, the request goes here first, and then the reverse proxy
 
 ### Parameter Description
 
-| Field     | Type             | Description                                                                                                                                                                             |
-|-----------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| l         | Address          | Listening address, the default value is 127.0.0.1:18080 |
-| update    | bool             | Update the latest version from GitHub, it will verify the upgrade package signature, sha512                                                                                             |
+| Field  | Type             | Description                                                                                 |
+|--------|------------------|---------------------------------------------------------------------------------------------|
+| l      | Address          | Listening address, the default value is 127.0.0.1:18080                                     |
+| f      | Address          | Forward to parent website eg:https://google.com                                             |
+| update | bool             | Update the latest version from GitHub, it will verify the upgrade package signature, sha512 |
 
 
 ### Instructions for use
@@ -32,4 +33,4 @@ After v0.0.6, the program will automatically update the latest version from GitH
 
 
 ### docker
-docker run --name session-guard-node --restart unless-stopped -p 18080:18080 -d chenjia404/guardnode
+docker run --name session-guard-node --restart unless-stopped -p 18080:18080   chenjia404/guardnode
