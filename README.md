@@ -33,4 +33,16 @@ After v0.0.6, the program will automatically update the latest version from GitH
 
 
 ### docker
-docker run --name session-guard-node --restart unless-stopped -p 18080:18080   chenjia404/guardnode
+`docker run --name session-guard-node --restart unless-stopped -p 18080:18080   chenjia404/guardnode`
+
+### Linux 
+
+last https://github.com/chenjia404/guardnode/releases
+```
+wget https://github.com/chenjia404/guardnode/releases/download/v0.0.2/guardnode_0.0.2_linux_amd64.tar.gz 
+tar -vxzf guardnode_0.0.2_linux_amd64.tar
+chmod +x guardnode
+./guardnode -l 0.0.0.0:18080
+```
+
+session proxy running successfully
