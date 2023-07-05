@@ -16,7 +16,7 @@ import (
 
 var logger = log.New(os.Stderr, "httpsproxy:", log.Llongfile|log.LstdFlags)
 var (
-	version   = "0.0.2"
+	version   = "0.0.3"
 	gitRev    = ""
 	buildTime = ""
 )
@@ -26,7 +26,7 @@ var ForwardHost string
 func main() {
 	var listenAdress string
 	var flag_update bool
-	flag.StringVar(&listenAdress, "l", "127.0.0.1:18080", "listen address.eg: 127.0.0.1:18080")
+	flag.StringVar(&listenAdress, "l", "0.0.0.0:18080", "listen address.eg: 127.0.0.1:18080")
 	flag.StringVar(&ForwardHost, "f", "", "Forward to parent website eg:https://google.com")
 	flag.BoolVar(&flag_update, "update", false, "update form github")
 	flag.Parse()

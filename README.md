@@ -8,7 +8,7 @@ The session guard node, the request goes here first, and then the reverse proxy
 
 | Field  | Type             | Description                                                                                 |
 |--------|------------------|---------------------------------------------------------------------------------------------|
-| l      | Address          | Listening address, the default value is 127.0.0.1:18080                                     |
+| l      | Address          | Listening address, the default value is 0.0.0.0:18080                                     |
 | f      | Address          | Forward to parent website eg:https://google.com                                             |
 | update | bool             | Update the latest version from GitHub, it will verify the upgrade package signature, sha512 |
 
